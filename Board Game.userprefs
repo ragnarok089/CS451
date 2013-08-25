@@ -1,0 +1,19 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Project\SaveData.cs">
+    <Files>
+      <File FileName="Assets\Scripts\UI\PieceMenu.cs" Line="276" Column="3" />
+      <File FileName="Assets\Scripts\Project\Piece.cs" Line="37" Column="2" />
+      <File FileName="Assets\Scripts\UI\LoadMenu.cs" Line="40" Column="21" />
+      <File FileName="Assets\Scripts\UI\TileMenu.cs" Line="3" Column="1" />
+      <File FileName="Assets\Scripts\Project\Board.cs" Line="74" Column="3" />
+      <File FileName="Assets\Scripts\Project\Tile.cs" Line="20" Column="15" />
+      <File FileName="Assets\Scripts\Project\Player.cs" Line="14" Column="2" />
+      <File FileName="Assets\Scripts\Project\SaveData.cs" Line="105" Column="2" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
