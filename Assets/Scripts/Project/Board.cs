@@ -64,19 +64,15 @@ public class Board : MonoBehaviour {
 	}
 	
 	// Saves the board, tiles and pieces
-	public void SaveBoard() {
-		print ("Save Board");
-		SaveData save = new SaveData();
-		save.boardHeight = boardHeight;
-		save.boardWidth = boardWidth;
-		save.tiles = tiles;
-		SaveLoad obj = new SaveLoad();
+	public void SaveBoard(string fileName) {
+		print ("Save Board   " + fileName);
+
 		
 	}
 	
 	// Loads the board from a file
-	public void LoadBoard() {
-		print ("Load Board");
+	public void LoadBoard(string fileName) {
+		print ("Load Board    " + fileName);
 		
 	}
 	

@@ -6,16 +6,26 @@ public class BoardMenu : MonoBehaviour {
 	public Board board;
 	public GUIText boardWidth;
 	public GUIText boardHeight;
+	public GUIText save;
+	public GameObject saveMenu;
+	public GameObject loadMenu;
 	
 	// Receives messages from the buttons
 	public void Message(string message) {
-		if (message.Equals("Save")) {
-			board.SaveBoard();	
-		} else if (message.Equals("Load")) {
-			board.LoadBoard();	
+		if (message.Equals("SaveBoard")) {
+			saveMenu.SetActive(true);
+		} else if (message.Equals("LoadBoard")) {
+			loadMenu.SetActive(true);
 		} else if (message.Equals("Generate")) {
 			SetBoardDimensions();
 			board.CreateBoard();			
+		} else if (message.Equals("Save")) {
+			board.SaveBoard(save.text);	
+			saveMenu.SetActive(false);
+		}  else if (message.Equals("CancelSave")) {
+			saveMenu.SetActive(false);
+		} else if (message.Equals("CancelLoad")) {
+			loadMenu.SetActive(false);
 		}
 	}
 	

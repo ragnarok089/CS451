@@ -4,13 +4,14 @@ using System.IO;
 
 public class LoadMenu : MonoBehaviour {
 	
+	public Board board;
 	public GameObject[] fileButtons;
 	public GameObject[] fileNames;
 	public System.Collections.Generic.List<string> files;
 	private int page = 0;
 	
 	
-	void Start() {
+	void OnEnable() {
 		LoadBoardsFromFolder();
 		ShowBoards(page);
 	}
@@ -42,8 +43,7 @@ public class LoadMenu : MonoBehaviour {
 	}
 	
 	private void LoadBoard(string fileName) {
-		
-		print (fileName);
+		board.LoadBoard(fileName);
 		this.gameObject.SetActive(false);
 	}
 	
@@ -73,9 +73,10 @@ public class LoadMenu : MonoBehaviour {
 	
 	// Loads files from the Resources folder and store them in the files list
 	private void LoadBoardsFromFolder() {
+		files.Clear();
 		string[] filePaths = Directory.GetFiles(Application.dataPath + "/Resources/Boards/");
 		for (int i = 0; i < filePaths.Length; i++) {
-			if (filePaths[i].ToLower().Contains(".txt")) {
+			if (filePaths[i].ToLower().Contains(".gg")) {
 				files.Add(filePaths[i].Substring(filePaths[i].LastIndexOf("/")+1));
 			}
 		}
