@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Xml;
 
 public class Board : MonoBehaviour {
 
@@ -65,14 +66,31 @@ public class Board : MonoBehaviour {
 	
 	// Saves the board, tiles and pieces
 	public void SaveBoard(string fileName) {
-		print ("Save Board   " + fileName);
-
+		//print ("Save Board   " + fileName);
+		
+		XmlWriter writer = XmlWriter.Create(Application.dataPath+"/Resources/Boards/" + fileName +".xml");
+		writer.Settings.Indent=true;
+		
+		writer.WriteStartDocument(); //writes xml declaration
+		writer.WriteStartElement("Board");
+		
+		writer.WriteElementString("BoardWidth", boardWidth.ToString());
+		writer.WriteElementString("BoardHeight", boardHeight.ToString ());
+		foreach(Tile t in tiles)
+			t.Save (writer);
+		
+		writer.WriteEndElement();
+		writer.WriteEndDocument();
+		
+		writer.Flush();
+		writer.Close();
 		
 	}
 	
 	// Loads the board from a file
 	public void LoadBoard(string fileName) {
-		print ("Load Board    " + fileName);
+		//print ("Load Board    " + fileName);
+		XmlReader reader = XmlReader.Create(Application.dataPath+"/Resources/Boards/" + fileName +".gg");
 		
 	}
 	

@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{ED2AB225-8B5D-7D53-F514-67487A3F7EA0}</ProjectGuid>
+	<ProjectGuid>{075131BF-BD4A-3851-5C3A-0D985D98586A}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -37,10 +37,10 @@
     <Reference Include="System.XML" />
 	<Reference Include="System.Core" />
 	<Reference Include="UnityEngine">
-	  <HintPath>G:/Program Files/Unity4/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	  <HintPath>C:/Unity_Editor/Data/Managed/UnityEngine.dll</HintPath>
 	</Reference>
 	<Reference Include="UnityEditor">
-	  <HintPath>G:/Program Files/Unity4/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	  <HintPath>C:/Unity_Editor/Data/Managed/UnityEditor.dll</HintPath>
 	</Reference>
   </ItemGroup>
   <ItemGroup>
@@ -68,6 +68,7 @@
      <Compile Include="Assets\GUI Essentials\Scripts\WeaponHandler.js" />
      <None Include="Assets\Resources\Boards\Board3.txt" />
      <None Include="Assets\Resources\Boards\Board6.txt" />
+     <None Include="Assets\Resources\Boards\Board1.xml" />
      <None Include="Assets\Resources\Boards\Board1.txt" />
      <None Include="Assets\Resources\Boards\Board7.txt" />
      <None Include="Assets\Editor\README.txt" />

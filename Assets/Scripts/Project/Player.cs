@@ -11,6 +11,10 @@ public class Player : MonoBehaviour {
 	void Start () {
 		hasWon = false;
 	}
-
+	
+	//Responsible for saving
+	public void Save(string path)
+	{
+	}
 	
 }

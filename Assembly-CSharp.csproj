@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{3FE5E82E-09AF-E610-2354-3DA6F20A8A30}</ProjectGuid>
+	<ProjectGuid>{6F64B4C3-E304-FB98-3CE9-283B38CF42FB}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -37,10 +37,10 @@
     <Reference Include="System.XML" />
 	<Reference Include="System.Core" />
 	<Reference Include="UnityEngine">
-	  <HintPath>G:/Program Files/Unity4/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	  <HintPath>C:/Unity_Editor/Data/Managed/UnityEngine.dll</HintPath>
 	</Reference>
 	<Reference Include="UnityEditor">
-	  <HintPath>G:/Program Files/Unity4/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	  <HintPath>C:/Unity_Editor/Data/Managed/UnityEditor.dll</HintPath>
 	</Reference>
   </ItemGroup>
   <ItemGroup>
@@ -58,6 +58,7 @@
      <Compile Include="Assets\Scripts\UI\TileMenu.cs" />
      <None Include="Assets\Resources\Boards\Board3.txt" />
      <None Include="Assets\Resources\Boards\Board6.txt" />
+     <None Include="Assets\Resources\Boards\Board1.xml" />
      <None Include="Assets\Resources\Boards\Board1.txt" />
      <None Include="Assets\Resources\Boards\Board7.txt" />
      <None Include="Assets\Editor\README.txt" />

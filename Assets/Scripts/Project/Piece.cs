@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Xml.Serialization;
+using System.Xml;
 
 public class Piece : MonoBehaviour {
 	
@@ -27,6 +29,27 @@ public class Piece : MonoBehaviour {
 		renderer.material = new Material(shader);
 		renderer.material.mainTexture = texture;
 		SetDirection(direction);
+	}
+	
+	//Responsible for saving
+	public void Save(XmlWriter writer)
+	{
+		writer.WriteStartElement("Piece");
+		
+		writer.WriteElementString("Texture", texture.name);
+		writer.WriteElementString("Direction", direction);
+		writer.WriteElementString("Type", type);
+		
+		writer.WriteStartElement("Moves");
+		foreach (string s in moves)
+			writer.WriteElementString("Move", s);
+		
+		writer.WriteElementString("XPosition", this.gameObject.transform.position.x.ToString());
+		writer.WriteElementString("YPosition", this.gameObject.transform.position.y.ToString());
+		writer.WriteElementString("ZPosition", this.gameObject.transform.position.z.ToString());
+		
+		writer.WriteEndElement();
+				
 	}
 	
 	// Sets the texture of the piece
