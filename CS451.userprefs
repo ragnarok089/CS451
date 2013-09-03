@@ -1,0 +1,21 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Other\MouseCameraControl.cs">
+    <Files>
+      <File FileName="Assets\Scripts\UI\TileMenu.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\UI\PieceMenu.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Project\GameController.cs" Line="79" Column="27" />
+      <File FileName="Assets\Scripts\Other\MouseSelectionEdit.cs" Line="4" Column="32" />
+      <File FileName="Assets\Scripts\UI\LoadMenu.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Project\Board.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Project\MainMenu.cs" Line="5" Column="1" />
+      <File FileName="Assets\Scripts\UI\EditMenu.cs" Line="19" Column="4" />
+      <File FileName="Assets\Scripts\Project\Piece.cs" Line="17" Column="40" />
+      <File FileName="Assets\Scripts\Other\MouseCameraControl.cs" Line="14" Column="54" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

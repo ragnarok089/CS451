@@ -14,7 +14,9 @@ public class EditMenu : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+		if (Input.GetKeyUp(KeyCode.Escape)) {
+			Application.LoadLevel("MainMenu");	
+		}
 	}
 	
 	// This message function are how the buttons communicate with this class

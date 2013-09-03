@@ -90,7 +90,7 @@ public class Board : MonoBehaviour {
 	// Loads the board from a file
 	public void LoadBoard(string fileName) {
 		//print ("Load Board    " + fileName);
-		XmlReader reader = XmlReader.Create(Application.dataPath+"/Resources/Boards/" + fileName +".gg");
+		XmlReader reader = XmlReader.Create(Application.dataPath+"/Resources/Boards/" + fileName);
 		
 	}
 	

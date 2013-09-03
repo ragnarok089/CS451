@@ -76,7 +76,7 @@ public class LoadMenu : MonoBehaviour {
 		files.Clear();
 		string[] filePaths = Directory.GetFiles(Application.dataPath + "/Resources/Boards/");
 		for (int i = 0; i < filePaths.Length; i++) {
-			if (filePaths[i].ToLower().Contains(".gg")) {
+			if (filePaths[i].ToLower().Contains(".xml")) {
 				files.Add(filePaths[i].Substring(filePaths[i].LastIndexOf("/")+1));
 			}
 		}

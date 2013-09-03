@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{6F64B4C3-E304-FB98-3CE9-283B38CF42FB}</ProjectGuid>
+	<ProjectGuid>{B652A544-4D2B-034E-B161-197A5DAC4149}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -37,15 +37,18 @@
     <Reference Include="System.XML" />
 	<Reference Include="System.Core" />
 	<Reference Include="UnityEngine">
-	  <HintPath>C:/Unity_Editor/Data/Managed/UnityEngine.dll</HintPath>
+	  <HintPath>G:/Program Files/Unity4/Editor/Data/Managed/UnityEngine.dll</HintPath>
 	</Reference>
 	<Reference Include="UnityEditor">
-	  <HintPath>C:/Unity_Editor/Data/Managed/UnityEditor.dll</HintPath>
+	  <HintPath>G:/Program Files/Unity4/Editor/Data/Managed/UnityEditor.dll</HintPath>
 	</Reference>
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\Other\MouseCameraControl.cs" />
+     <Compile Include="Assets\Scripts\Other\MouseSelectionEdit.cs" />
      <Compile Include="Assets\Scripts\Project\Board.cs" />
+     <Compile Include="Assets\Scripts\Project\GameController.cs" />
+     <Compile Include="Assets\Scripts\Project\MainMenu.cs" />
      <Compile Include="Assets\Scripts\Project\Piece.cs" />
      <Compile Include="Assets\Scripts\Project\Player.cs" />
      <Compile Include="Assets\Scripts\Project\SaveData.cs" />

@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{075131BF-BD4A-3851-5C3A-0D985D98586A}</ProjectGuid>
+	<ProjectGuid>{8043B04A-1041-E310-4CEF-8435A99044AF}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -37,10 +37,10 @@
     <Reference Include="System.XML" />
 	<Reference Include="System.Core" />
 	<Reference Include="UnityEngine">
-	  <HintPath>C:/Unity_Editor/Data/Managed/UnityEngine.dll</HintPath>
+	  <HintPath>G:/Program Files/Unity4/Editor/Data/Managed/UnityEngine.dll</HintPath>
 	</Reference>
 	<Reference Include="UnityEditor">
-	  <HintPath>C:/Unity_Editor/Data/Managed/UnityEditor.dll</HintPath>
+	  <HintPath>G:/Program Files/Unity4/Editor/Data/Managed/UnityEditor.dll</HintPath>
 	</Reference>
   </ItemGroup>
   <ItemGroup>
@@ -52,15 +52,11 @@
      <Compile Include="Assets\GUI Essentials\Scripts\DropDownMenu.js" />
      <Compile Include="Assets\GUI Essentials\Scripts\DropDownOption.js" />
      <Compile Include="Assets\GUI Essentials\Scripts\HealthBar.js" />
-     <Compile Include="Assets\GUI Essentials\Scripts\MainMenu.js" />
      <Compile Include="Assets\GUI Essentials\Scripts\MiniMap.js" />
-     <Compile Include="Assets\GUI Essentials\Scripts\Multiplayer.js" />
-     <Compile Include="Assets\GUI Essentials\Scripts\Options.js" />
      <Compile Include="Assets\GUI Essentials\Scripts\OtherElements.js" />
      <Compile Include="Assets\GUI Essentials\Scripts\PauseMenu.js" />
      <Compile Include="Assets\GUI Essentials\Scripts\PauseMenuOptions.js" />
      <Compile Include="Assets\GUI Essentials\Scripts\RadioButton.js" />
-     <Compile Include="Assets\GUI Essentials\Scripts\Singleplayer.js" />
      <Compile Include="Assets\GUI Essentials\Scripts\Slider.js" />
      <Compile Include="Assets\GUI Essentials\Scripts\TextArea.js" />
      <Compile Include="Assets\GUI Essentials\Scripts\TextBox.js" />
