@@ -41,8 +41,9 @@ public class Piece : MonoBehaviour {
 		writer.WriteElementString("Type", type);
 		
 		writer.WriteStartElement("Moves");
-		foreach (string s in moves)
+		foreach (string s in moves){
 			writer.WriteElementString("Move", s);
+		}
 		
 		writer.WriteElementString("XPosition", this.gameObject.transform.position.x.ToString());
 		writer.WriteElementString("YPosition", this.gameObject.transform.position.y.ToString());
@@ -50,6 +51,63 @@ public class Piece : MonoBehaviour {
 		
 		writer.WriteEndElement();
 				
+	}
+	
+	public void Load(ref XmlReader reader){
+		print ("Loading Piece");
+		
+		float tempX = -1;
+		float tempY = -1;
+		float tempZ = -1;
+		
+		print ("Loading Piece");
+		
+		while(reader.NodeType != XmlNodeType.EndElement){
+			
+			reader.Read ();
+			
+			if (reader.Name == "Texture"){
+				while(reader.NodeType != XmlNodeType.EndElement){
+					reader.Read ();
+					if(reader.NodeType == XmlNodeType.Text){
+						//texture.name = reader.Value;
+					}
+				}
+				//texture.name = reader.Value;
+				print ("Loading texture");
+			}
+			
+			reader.Read();
+			if (reader.Name == "Direction"){
+				while(reader.NodeType != XmlNodeType.EndElement){
+					reader.Read ();
+					if(reader.NodeType == XmlNodeType.Text){
+						direction = reader.Value;
+					}
+				}
+				print ("Loading direction");
+			}
+			
+			reader.Read();
+			if (reader.Name == "Type"){
+				while(reader.NodeType != XmlNodeType.EndElement){
+					reader.Read ();
+					if(reader.NodeType == XmlNodeType.Text){
+						type = reader.Value;
+					}
+				}
+				print ("Loading type");
+			}
+			
+			reader.Read();
+			if(reader.Name == "Moves"){
+				while(reader.NodeType != XmlNodeType.EndElement)
+				{
+					reader.Read();
+					
+				}
+			}
+		}
 	}
 	
 	// Sets the texture of the piece

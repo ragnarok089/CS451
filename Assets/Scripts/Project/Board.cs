@@ -84,7 +84,6 @@ public class Board : MonoBehaviour {
 		
 		writer.Flush();
 		writer.Close();
-		
 	}
 	
 	// Loads the board from a file
@@ -92,6 +91,55 @@ public class Board : MonoBehaviour {
 		//print ("Load Board    " + fileName);
 		XmlReader reader = XmlReader.Create(Application.dataPath+"/Resources/Boards/" + fileName);
 		
+		while(reader.Read()){
+			if (reader.NodeType == XmlNodeType.Element && reader.Name == "Board"){
+				print ("<Board>");
+				
+				//While inside between <Board> </Board> tags aka the begin and end
+				while(reader.NodeType != XmlNodeType.EndElement)
+				{
+					//Parses board width
+					reader.Read();
+					if(reader.Name == "BoardWidth"){
+						while(reader.NodeType!= XmlNodeType.EndElement){
+							reader.Read ();
+							if (reader.NodeType == XmlNodeType.Text){
+								boardWidth = int.Parse(reader.Value);
+							}
+						}
+					}
+						
+					//Parses board height
+					reader.Read();
+					if(reader.Name == "BoardHeight"){
+						while(reader.NodeType!= XmlNodeType.EndElement){
+							reader.Read ();
+							if (reader.NodeType == XmlNodeType.Text){
+								boardHeight = int.Parse(reader.Value);
+							}
+						}
+					}
+					
+					//Reinitialize the tiles array
+					tiles = new Tile[boardWidth*boardHeight];
+					
+					for (int i = 0; i < boardWidth*boardHeight; i++){
+						reader.Read();
+						if(reader.Name == "Tile"){
+							tiles[i] = new Tile();
+							tiles[i].Load(ref reader);
+						}
+					}
+					
+					
+				}
+			}
+			else{
+				print("Error: Can't read board");
+			}
+			
+		}
+		reader.Close();
 	}
 	
 	// Clears all tiles and pieces from the board

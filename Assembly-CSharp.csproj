@@ -61,6 +61,7 @@
      <Compile Include="Assets\Scripts\UI\TileMenu.cs" />
      <None Include="Assets\Resources\Boards\Board3.txt" />
      <None Include="Assets\Resources\Boards\Board6.txt" />
+     <None Include="Assets\Resources\Boards\Test.xml" />
      <None Include="Assets\Resources\Boards\Board1.xml" />
      <None Include="Assets\Resources\Boards\Board1.txt" />
      <None Include="Assets\Resources\Boards\Board7.txt" />
